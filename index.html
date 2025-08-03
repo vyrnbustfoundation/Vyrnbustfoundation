@@ -1,4 +1,5 @@
-<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -26,14 +27,37 @@
       text-decoration: none;
       font-weight: bold;
     }
+
+    /* HERO SECTION WITH BACKGROUND IMAGE */
     .hero {
+      position: relative;
       text-align: center;
       padding: 100px 20px;
-      background: linear-gradient(to bottom right, #4b2c20, #1a0e05);
+      background-image: url('vyrn123.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: gold;
     }
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to bottom right, rgba(26, 14, 5, 0.7), rgba(0, 0, 0, 0.7));
+      z-index: 1;
+    }
+    .hero h1,
+    .hero p,
+    .cta-buttons {
+      position: relative;
+      z-index: 2;
+    }
+
     .hero h1 {
       font-size: 3rem;
-      color: gold;
       margin-bottom: 0.5rem;
     }
     .hero p {
@@ -92,18 +116,24 @@
       <a href="#involved">Get Involved</a>
       <a href="#contact">Contact</a>
     </nav>
-  </header>  <section class="hero" id="home">
+  </header>
+
+  <section class="hero" id="home">
     <h1>VYRN BUST FOUNDATION</h1>
     <p>Shaping Policies. Empowering Students. Transforming Campus Life.</p>
     <div class="cta-buttons">
       <a href="#involved">Join the Movement</a>
       <a href="#work">Explore Our Work</a>
     </div>
-  </section>  <section class="section" id="about">
+  </section>
+
+  <section class="section" id="about">
     <h2>About Us</h2>
     <p>The Vyrn Bust Foundation is a student-driven political and development organization aimed at transforming campus life through advocacy, leadership, and faith. Founded in 2025, VBF seeks to empower the student body, promote positive policy change, and support academic and social welfare for all.</p>
     <p><em>"Shaping Policies. Empowering Students. Transforming Campus Life."</em></p>
-  </section>  <section class="section" id="work">
+  </section>
+
+  <section class="section" id="work">
     <h2>Our Work</h2>
     <div class="features">
       <div class="feature">
@@ -123,7 +153,9 @@
         <p>Promoting Christian values and campus service.</p>
       </div>
     </div>
-  </section>  <section class="section" id="involved">
+  </section>
+
+  <section class="section" id="involved">
     <h2>Get Involved</h2>
     <p>There are many ways to become part of the Vyrn Bust Foundation mission:</p>
     <ul>
@@ -132,16 +164,20 @@
       <li>Join our team as an executive or program lead</li>
     </ul>
     <p><strong>Email us:</strong> vyrnbustfoundation@gmail.com</p>
-  </section>  <section class="section" id="contact">
+  </section>
+
+  <section class="section" id="contact">
     <h2>Contact Us</h2>
     <p>If you have questions, suggestions, or want to collaborate with us, please reach out:</p>
-    <p><strong>Phone:</strong>+233 (0) 535607757 / +233 (0)509446964 </p>
-  <p><strong>Email:</strong> vyrnbustfoundation@gmail.com</p>
+    <p><strong>Phone:</strong> +233 (0) 535607757 / +233 (0)509446964</p>
+    <p><strong>Email:</strong> vyrnbustfoundation@gmail.com</p>
     <p><strong>Instagram:</strong> @VyrnBustFoundation</p>
     <p><strong>Facebook:</strong> Vyrn Bust Foundation</p>
     <p><strong>Tiktok:</strong> vyrnbusttv</p>
-    <p><strong>Snapchat:</strong>vyrnbusttv</p>
-  </section>  <footer>
+    <p><strong>Snapchat:</strong> vyrnbusttv</p>
+  </section>
+
+  <footer>
     <p>&copy; 2025 Vyrn Bust Foundation. All rights reserved.</p>
   </footer>
 </body>
